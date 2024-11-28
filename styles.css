@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Rubik', serif;
+    background-color: hsl(270, 20%, 96%);
+    padding-bottom: 30px;
+}
+
+.main {
+    max-height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.phone {
+    margin: 50px 0 0 0;
+    width: 80%;
+    padding: 3%;
+    border-radius: 40px;
+    background-color: #ffffff;
+}
+
+.message {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.background {
+    background-image: linear-gradient(to right , hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+    border-radius: 30px 30px 10px 10px;
+}
+
+.camera {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 0 0 15px 15px;
+    height: 25px;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0 5% 0;
+}
+
+.leftpart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.leftpart img {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 25px;
+}
+
+.profile .desc {
+    font-size: 9px;
+    color: 	hsl(276, 100%, 81%);
+}
+
+.profile .name {
+    font-size: 13px;
+    margin-bottom: 2.5px;
+}
+
+.threedots {
+    margin-right: 5%;
+}
+
+.leftmsg {
+    width: 50%;
+    background-color: lightgray;
+    color: hsl(276, 55%, 52%);
+    margin: 4% 0 0 3%;
+    padding: 3%;
+    border-radius: 15px 15px 15px 5px;
+    font-size: 12px;
+}
+
+.rightmsg {
+    width: 50%;
+    background-color: #ffffff;
+    color: hsl(271, 15%, 43%);
+    margin: 4% 3% 0 ;
+    padding: 3%;
+    border-radius: 15px 15px 5px 15px;
+    font-size: 12px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
+
+.make {
+    width: 30%;
+}
+
+.images {
+    margin: 5% 3% 0 0;
+}
+
+.images img {
+    border-radius: 10px;
+    width: 55px;
+}
+
+.payment {
+    background-image: linear-gradient(to right , hsl(293, 100%, 63%) ,hsl(264, 100%, 61%)  );
+    width: 65%;
+    margin: 4% 0 0 3%;
+    border-radius: 15px 15px 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    color: #ffffff;
+}
+
+.payment > p {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.payment-one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    color: lightgray;
+}
+
+.text-area {
+    display: flex;
+    justify-content: center;
+}
+
+.send {
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin: 5.5% 0 4% 0;
+    padding: 2% 0% 2% 4%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: lightgray;
+}
+
+.arrow {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 100px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 3%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px 0 50px 0;
+}
+
+.heading h2 {
+    font-size: 40px; 
+    font-weight: 500;
+}
+
+.heading p {
+    width: 80%;
+    margin-top: 3%;
+    line-height: 2rem;
+    color: grey;
+    font-size: 16px;
+}
+
+.purple {
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+    border-radius: 0 0 1000px 0;
+    z-index: -1;
+}
+
+.grey {
+    background-color: rgba(240, 234, 234, 0.582);
+    width: 50%;
+    height: 50vh;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 1000px 0 0 0;
+    z-index: -1;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (min-width:865px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .phone {
+        width: 25%;
+        padding: 1%;
+    }
+
+    .heading {
+        width: 35%;
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    .purple {
+        width: 30%;
+        height: 80vh;
+        border-radius: 0 0 1000px 1000px;
+    }
+
+    .grey {
+        width: 30%;
+        height: 80vh;
+        border-radius: 1000px 55px 0 0;
+    }
+}
